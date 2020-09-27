@@ -1,68 +1,61 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ✈ 마이리얼트립 과제
 
-## Available Scripts
+## 👨‍💻 Introdution
 
-In the project directory, you can run:
+안녕하세요 마이리얼트립에 프론트엔드 개발 직무로 지원한 임정택입니다.</br>
+총 2일 동안 과제를 진행했습니다.
 
-### `npm start`
+- 인원 : 1명
+- 프로젝트 기간 : 2020.09.26 ~ 2020.09.27
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 목표
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- 최대한 라이브러리를 쓰지 않고 구현해보기
 
-### `npm test`
+## 사용한 기술
+- HTML, React Hooks, Styled-components, Redux
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 코딩 스탠다드
+코딩 스탠다드는 구글과 Airbnb, Nexedi, W3S School 에서 제공하는 코드 스타일을 묶은 버전으로 하고 있습니다.</br>
+해석 원문 블로그 링크는 아래와 같습니다.</br>
+https://velog.io/@cada/자바스크립트-코딩-및-네이밍-컨벤션-1편
 
-### `npm run build`
+## 폴더 구조
+- create-react-app을 활용하여 초기 세팅 했습니다.
+<img alt="Git" src="https://user-images.githubusercontent.com/47416686/94367744-90cc8780-011b-11eb-98b9-609620a6adcf.PNG" width="300">
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 실행 방법
+- npm run start
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## 구현한 기능
+### Header 
+##### 상품 리스트, 위시 리스트 전환이 가능한 네비게이션 메뉴
+- 메뉴 선택시 각 메뉴 스타일 강조
+##### 가격 높은 순, 가격 낮은 순 정렬 기능
+- 가격 높은 순, 낮은 순 버튼을 클릭하면 화면에 정렬된 리스트가 보여짐
+##### Header는 항상 최상단에 고정
+</br>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 리스트 공통
+##### 리스트에 썸네일, 상품명, 가격 데이터 목데이터로 구현 및 반응형 완료
+##### 상품명 2줄까지 표시 완료
+##### 위시 리스트에 포함/제거 할 수 있는 기능
+- 하트 모양 아이콘 버튼으로 포함/제거 구현
+##### 화면에 보여질 때 로됭되고 그 이전에 blank 이미지 표시 기능
+- react-lazy-load-image-component 라이브러리를 사용하여 구현
+##### 무한 스크롤 구현
+  <br/>
+  
+### 상품 리스트
+- 위시 리스트에 포함된 상품 카드 구분 가능
+<br/>
 
-### `npm run eject`
+### 위시리스트
+- 리덕스를 사용해 위시 리스트 포함된 카드만 표시, 리스트 제거, 담긴 상품이 없을 경우 담긴 상품이 없습니다 문구 띄우기 완료
+</br>
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 구현 못한 기능
+- 기존 스크롤 위치 유지하기
+- 위시 리스트 항목 삭제 후 기존 리스트의 아이콘 스타일 변경( 빨간색 -> 흰색 )
+- 위시 리스트 추가 항목 클릭시 무분별한 렌더링 제어 실패
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
