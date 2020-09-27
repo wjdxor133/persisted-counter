@@ -25,7 +25,7 @@ https://velog.io/@cada/자바스크립트-코딩-및-네이밍-컨벤션-1편
 
 ## 폴더 구조
 
-- create-react-app을 활용하여 초기 세팅 했습니다.
+- create-react-app을 활용하여 초기 세팅 했습니다.<br/><br/>
   <img alt="Git" src="https://user-images.githubusercontent.com/47416686/94367744-90cc8780-011b-11eb-98b9-609620a6adcf.PNG" width="300">
 
 ## 실행 방법
